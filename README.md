@@ -2,6 +2,7 @@
 
 
 ### Code Structure
+```
 .
 ├── Dockerfile
 ├── Makefile
@@ -41,6 +42,7 @@
 │   └── password
 │       └── password.go
 └── web/
+```
 
 The design of this application follow clean/hexagonal architecture.
 
