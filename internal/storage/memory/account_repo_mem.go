@@ -1,8 +1,8 @@
 package in_memory
 
 import (
-	"gravitational_full_stack_challenge/internal/entity/account"
-	"gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 //accountRepoMem in memory repo
@@ -30,6 +30,15 @@ func (r *accountRepoMem) Get(id id.ID) (*account.Account, error) {
 		return nil, account.ErrInvalid
 	}
 	return r.m[id], nil
+}
+
+func (r *accountRepoMem) FindUserWithEmail(email string) (*account.Account, error) {
+	for _, acc := range r.m {
+		if acc.Email == email {
+			return acc, nil
+		}
+	}
+	return nil, account.ErrInvalid
 }
 
 //Update an account

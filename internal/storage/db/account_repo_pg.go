@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"time"
 
-	"gravitational_full_stack_challenge/internal/entity/account"
-	"gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 //pgRepo postgresql repo
@@ -28,6 +28,22 @@ func (r *pgRepo) Get(id id.ID) (*account.Account, error) {
 	}
 	var account_ account.Account
 	rows, err := stmt.Query(id)
+	if err != nil {
+		return nil, err
+	}
+	for rows.Next() {
+		err = rows.Scan(&account_.ID, &account_.Email, &account_.Password, &account_.Actions, &account_.TenantID, &account_.CreatedAt, &account_.UpdatedAt)
+	}
+	return &account_, nil
+}
+
+func (r *pgRepo) FindUserWithEmail(email string) (*account.Account, error) {
+	stmt, err := r.db.Prepare(`select id, email, password, actions, tenant_id, created_time, updated_time from account where email = ?`)
+	if err != nil {
+		return nil, err
+	}
+	var account_ account.Account
+	rows, err := stmt.Query(email)
 	if err != nil {
 		return nil, err
 	}

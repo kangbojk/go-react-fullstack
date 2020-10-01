@@ -1,8 +1,8 @@
 package in_memory
 
 import (
-	"gravitational_full_stack_challenge/internal/entity/tenant"
-	"gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 //tenantRepoMem in memory repo

@@ -3,8 +3,8 @@ package in_memory
 import (
 	"testing"
 
+	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
 	"github.com/stretchr/testify/assert"
-	"gravitational_full_stack_challenge/internal/entity/account"
 )
 
 func Test_Account_Create(t *testing.T) {
