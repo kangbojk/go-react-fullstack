@@ -3,10 +3,10 @@ package usecase
 import (
 	"testing"
 
+	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/internal/storage/memory"
 	"github.com/stretchr/testify/assert"
-	"gravitational_full_stack_challenge/internal/entity/account"
-	"gravitational_full_stack_challenge/internal/entity/tenant"
-	"gravitational_full_stack_challenge/internal/storage/memory"
 )
 
 func Test_GetTenantUsers(t *testing.T) {

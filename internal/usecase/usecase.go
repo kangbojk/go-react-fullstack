@@ -4,9 +4,9 @@ package usecase
 import (
 	"time"
 
-	"gravitational_full_stack_challenge/internal/entity/account"
-	"gravitational_full_stack_challenge/internal/entity/tenant"
-	"gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
+	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 type service struct {
@@ -65,12 +65,12 @@ func (s *service) AddUser(a *account.Account, count int) error {
 		return err
 	}
 
-	var full error
-	if userTenant.Users+count < userTenant.Capacity {
+	// var full error
+	if userTenant.Users+count <= userTenant.Capacity {
 		userTenant.Users += count
-	} else if userTenant.Users+count == userTenant.Capacity {
-		userTenant.Users += count
-		full = tenant.ErrFull
+		// } else if userTenant.Users+count == userTenant.Capacity {
+		// 	userTenant.Users += count
+		// 	full = tenant.ErrFull
 	} else {
 		return tenant.ErrFull
 	}
@@ -80,9 +80,9 @@ func (s *service) AddUser(a *account.Account, count int) error {
 		return err
 	}
 
-	if full != nil {
-		return full
-	}
+	// if full != nil {
+	// 	return full
+	// }
 	return nil
 }
 
@@ -126,4 +126,16 @@ func (s *service) GetTenant(i id.ID) (*tenant.Tenant, error) {
 func (s *service) AssignTenantToAccount(a *account.Account, t *tenant.Tenant) error {
 	a.TenantID = t.ID
 	return s.aRepo.Update(a)
+}
+
+func (s *service) FindUserWithEmail(email string) (*account.Account, error) {
+	return s.aRepo.FindUserWithEmail(email)
+}
+
+func (s *service) UpdateAccount(a *account.Account) error {
+	return s.aRepo.Update(a)
+}
+
+func (s *service) UpdateTenant(t *tenant.Tenant) error {
+	return s.tRepo.Update(t)
 }
