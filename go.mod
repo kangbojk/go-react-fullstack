@@ -10,5 +10,6 @@ require (
 	github.com/gorilla/websocket v1.4.2
 	github.com/quasoft/memstore v0.0.0-20191010062613-2bce066d2b0b
 	github.com/rs/cors v1.7.0
+	github.com/stretchr/testify v1.6.1 // indirect
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
 )
