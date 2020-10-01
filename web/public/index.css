@@ -1,0 +1,207 @@
+html, body {
+  font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* ALERT CSS
+*
+*/
+
+.alert {
+  background: #CCC;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+  color: #FFF;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 40px 40px 40px;
+  text-align: center;
+}
+
+.alert.is-error {
+  background: #FF1744;
+}
+
+.alert.is-success {
+  background: #00BFA5;
+}
+
+/*
+* BUTTON CSS
+*
+*/
+
+.button {
+  background: #00B0FF;
+  border: none;
+  border-radius: 4px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+  outline: none;
+  padding: 0 16px;
+  text-transform: uppercase;
+  transition: box-shadow .3s;
+}
+
+.button:hover, .button:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+}
+
+.button.is-success {
+  background: #00BFA5;
+}
+
+.button.is-border {
+  background: #FFF;
+  border: 1px solid #00B0FF;
+  color: #00B0FF;
+}
+
+.button.block {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+/*
+* LOGIN FORM CSS
+*
+*/
+
+.login-form {
+  border: 1px solid #00B9F7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 100px auto;
+  padding: 40px;
+  width: 456px;
+}
+
+.login-form h1 {
+  color: #78909C;
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0 0 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-form label {
+  color: #78909C;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.login-form .field {
+  box-sizing: border-box;
+  border: 1px solid #CFD8DC;
+  border-radius: 2px;
+  color: #607D8B;
+  font-size: 14px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 0 24px 0;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.login-form .button {
+  margin: 64px 0 0 0;
+}
+
+/*
+* DASHBOARD CSS
+*
+*/
+
+/* TOP NAV */
+
+.top-nav {
+  padding: 40px;
+  position: relative;
+}
+
+.top-nav h1 {
+  color: #455A64;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 40px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.top-nav i {
+  font-size: 40px;
+  float: left;
+  margin: 0 16px 0 0;
+}
+
+.top-nav .button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 1;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+  background: #D8DFE3;
+  border-radius: 200px;
+  height: 24px;
+  position: relative;
+}
+
+.progress-bar-usage {
+  background: #2CC3F8;
+  border-radius: 200px;
+  height: 24px;
+  position: relative;
+}
+
+/* PLAN CARD */
+
+.plan {
+  background: #ECEFF1;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 40px;
+}
+
+.plan header {
+  background: #B0BEC5;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 64px;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+
+.plan-content {
+  padding: 32px;
+}
+
+.plan-content h3 {
+  color: #546E7A;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 56px;
+  margin: 0;
+}
+
+.plan footer {
+  padding: 32px;
+}
