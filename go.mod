@@ -1,4 +1,4 @@
-module gravitational_full_stack_challenge
+module github.com/kangbojk/go-react-fullstack
 
 go 1.14
 
