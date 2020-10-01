@@ -2,8 +2,8 @@ package tenant
 
 import (
 	"time"
-
-	"github.com/kangbojk/gravitational_full_stack_challenge/pkg/ID"
+	"errors"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 //Tenant data
@@ -27,3 +27,4 @@ type Repository interface {
 
 var ErrAlreadyUpgraded = errors.New("Plan already upgraded")
 var ErrFull = errors.New("Tenant full, please upgrade")
+var ErrNotFound = errors.New("No tenant")

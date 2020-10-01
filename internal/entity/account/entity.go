@@ -3,7 +3,7 @@ package account
 
 import (
 	"errors"
-	"github.com/kangbojk/gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 	"time"
 )
 
@@ -20,6 +20,7 @@ type Account struct {
 
 // Repository provides access to the account storage.
 type Repository interface {
+	FindUserWithEmail(email string) (*Account, error)
 	Get(id id.ID) (*Account, error)
 	List() ([]*Account, error)
 

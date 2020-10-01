@@ -3,7 +3,7 @@ package account
 import (
 	"time"
 
-	"gravitational_full_stack_challenge/pkg/ID"
+	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
 func NewFixtureUserAccount() *Account {
