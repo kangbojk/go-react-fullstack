@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/kangbojk/go-react-fullstack/internal/server"
-	"github.com/kangbojk/go-react-fullstack/internal/storage/memory"
-	"github.com/kangbojk/go-react-fullstack/internal/usecase"
+	"github.com/kangbojk/go-react-fullstack/pkg/server"
+	"github.com/kangbojk/go-react-fullstack/pkg/storage/memory"
+	"github.com/kangbojk/go-react-fullstack/pkg/usecase"
 )
 
 func main() {

@@ -8,42 +8,50 @@
 .
 ├── Dockerfile
 ├── Makefile
+├── README.md
 ├── cmd
-│   └── main.go
-├── config/
-├── internal
-│   ├── entity
-│   │   ├── account
-│   │   │   ├── entity.go
-│   │   │   └── fixture.go
-│   │   └── tenant
-│   │       ├── entity.go
-│   │       └── fixture.go
-│   ├── server
-│   │   ├── data/
-│   │   ├── middleware/
-│   │   ├── router
-│   │   │   ├── handler.go
-│   │   │   ├── router.go
-│   │   │   └── router_test.go
-│   │   └── server.go
-│   ├── storage
-│   │   ├── db
-│   │   │   └── account_repo_pg.go
-│   │   └── memory
-│   │       ├── account_repo_mem.go
-│   │       ├── account_repo_mem_test.go
-│   │       └── tenant_repo_mem.go
-│   └── usecase
-│       ├── interface.go
-│       ├── usecase.go
-│       └── usecase_test.go
+│   └── main.go
+├── docker-compose.yaml
+├── go.mod
+├── go.sum
 ├── pkg
-│   ├── ID
-│   │   └── id.go
-│   └── password
-│       └── password.go
-└── web/
+│   ├── ID
+│   │   └── id.go
+│   ├── entity
+│   │   ├── account
+│   │   │   ├── entity.go
+│   │   │   ├── fixture.go
+│   │   │   └── manager.go
+│   │   └── tenant
+│   │       ├── entity.go
+│   │       └── fixture.go
+│   ├── password
+│   │   └── password.go
+│   ├── server
+│   │   ├── data
+│   │   │   ├── account.go
+│   │   │   └── tenant.go
+│   │   ├── middleware
+│   │   ├── router
+│   │   │   ├── auth.go
+│   │   │   ├── handler.go
+│   │   │   ├── jwt.go
+│   │   │   ├── router.go
+│   │   │   ├── router_test.go
+│   │   │   └── ws.go
+│   │   └── server.go
+│   ├── storage
+│   │   ├── db
+│   │   │   └── account_repo_pg.go
+│   │   └── memory
+│   │       ├── account_repo_mem.go
+│   │       ├── account_repo_mem_test.go
+│   │       └── tenant_repo_mem.go
+│   └── usecase
+│       ├── interface.go
+│       ├── usecase.go
+│       └── usecase_test.go
+└── web
 ```
 
 The design of this application follow clean/hexagonal architecture.
