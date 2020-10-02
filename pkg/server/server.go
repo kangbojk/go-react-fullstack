@@ -2,7 +2,8 @@ package server
 
 import (
 	// "crypto/tls"
-
+	"os"
+	"log"
 	"net/http"
 	"time"
 
@@ -13,12 +14,19 @@ import (
 func NewServer(service usecase.Service) *http.Server {
 	handler := router.NewRouter(service)
 
+	port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080"
+    }
+
 	s := &http.Server{
-		Addr:         ":8088",
+		Addr:         ":" + port,
 		Handler:      handler,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}
+
+	log.Println("start server on port: ", port)
 
 	return s
 }

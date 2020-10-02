@@ -1,7 +1,6 @@
 package main
 
-import (
-	"fmt"
+import (	
 	"log"
 
 	"github.com/kangbojk/go-react-fullstack/pkg/server"
@@ -27,7 +26,6 @@ func main() {
 	service := usecase.NewService(aRepo, tRepo)
 	server := server.NewServer(service)
 
-	// TODO: Read port from config
-	fmt.Println("start server on port 8088")
+	// TODO: Read port from config	
 	log.Fatal(server.ListenAndServe())
 }
