@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kangbojk/go-react-fullstack/internal/server/router"
-	"github.com/kangbojk/go-react-fullstack/internal/usecase"
+	"github.com/kangbojk/go-react-fullstack/pkg/server/router"
+	"github.com/kangbojk/go-react-fullstack/pkg/usecase"
 )
 
 func NewServer(service usecase.Service) *http.Server {

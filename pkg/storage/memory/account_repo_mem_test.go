@@ -3,7 +3,7 @@ package in_memory
 import (
 	"testing"
 
-	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/account"
 	"github.com/stretchr/testify/assert"
 )
 

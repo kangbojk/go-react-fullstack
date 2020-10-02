@@ -7,7 +7,7 @@ import (
 
 	"github.com/quasoft/memstore"
 
-	"github.com/kangbojk/go-react-fullstack/internal/usecase"
+	"github.com/kangbojk/go-react-fullstack/pkg/usecase"
 )
 
 var store = memstore.NewMemStore(

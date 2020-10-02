@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
-	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
-	"github.com/kangbojk/go-react-fullstack/internal/usecase"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/account"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/pkg/usecase"
 	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 	"github.com/kangbojk/go-react-fullstack/pkg/password"
 )

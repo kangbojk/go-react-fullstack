@@ -4,8 +4,8 @@ package usecase
 import (
 	"time"
 
-	"github.com/kangbojk/go-react-fullstack/internal/entity/account"
-	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/account"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/tenant"
 	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 

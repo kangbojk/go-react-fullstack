@@ -1,7 +1,7 @@
 package in_memory
 
 import (
-	"github.com/kangbojk/go-react-fullstack/internal/entity/tenant"
+	"github.com/kangbojk/go-react-fullstack/pkg/entity/tenant"
 	"github.com/kangbojk/go-react-fullstack/pkg/ID"
 )
 
