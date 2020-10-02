@@ -1,0 +1,128 @@
+/*
+* BUTTON CSS
+*
+*/
+
+.button {
+    background: #00B0FF;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    outline: none;
+    padding: 0 16px;
+    text-transform: uppercase;
+    transition: box-shadow .3s;
+}
+
+.button:hover, .button:focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+}
+
+.button.block {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+/*
+  * LOGIN FORM CSS
+  *
+  */
+
+.loginForm {
+    border: 1px solid #00B9F7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 100px auto 20px;
+    padding: 40px;
+    width: 456px;
+}
+
+.loginForm h1 {
+    color: #78909C;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.loginForm label {
+    color: #78909C;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    line-height: 24px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.loginForm .field {
+    box-sizing: border-box;
+    border: 1px solid #CFD8DC;
+    border-radius: 2px;
+    color: #607D8B;
+    font-size: 14px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 24px 0;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.loginForm .button {
+    margin: 64px 0 0 0;
+}
+
+.signup {
+    box-sizing: border-box;
+    border: 1px solid #CFD8DC;
+    border-radius: 2px;
+    color: #607D8B;
+    font-size: 14px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    width: 456px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*
+* ALERT CSS
+*
+*/
+
+.alertMsg {
+    width: 456px;
+    background: rgba(245, 39, 108, 0.5);
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+    color: # FFF;
+    height: 48px;
+    line-height: 48px;
+    margin: 40px auto;
+    text-align: center;
+}

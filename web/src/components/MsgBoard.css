@@ -1,0 +1,23 @@
+/*
+* ALERT CSS
+*
+*/
+
+.alert {
+    background: #CCC;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .24);
+    color: #FFF;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 40px 40px 40px;
+    text-align: center;
+}
+
+.alert.is-error {
+    background: #FF1744;
+}
+
+.alert.is-success {
+    background: #00BFA5;
+}
