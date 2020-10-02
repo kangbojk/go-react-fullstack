@@ -43,41 +43,6 @@
 │   │   └── id.go
 │   └── password
 │       └── password.go
-=======
-│   └── main.go
-├── config/
-├── internal
-│   ├── entity
-│   │   ├── account
-│   │   │   ├── entity.go
-│   │   │   └── fixture.go
-│   │   └── tenant
-│   │       ├── entity.go
-│   │       └── fixture.go
-│   ├── server
-│   │   ├── data/
-│   │   ├── middleware/
-│   │   ├── router
-│   │   │   ├── handler.go
-│   │   │   ├── router.go
-│   │   │   └── router_test.go
-│   │   └── server.go
-│   ├── storage
-│   │   ├── db
-│   │   │   └── account_repo_pg.go
-│   │   └── memory
-│   │       ├── account_repo_mem.go
-│   │       ├── account_repo_mem_test.go
-│   │       └── tenant_repo_mem.go
-│   └── usecase
-│       ├── interface.go
-│       ├── usecase.go
-│       └── usecase_test.go
-├── pkg
-│   ├── ID
-│   │   └── id.go
-│   └── password
-│       └── password.go
 └── web/
 ```
 
