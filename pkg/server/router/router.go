@@ -44,7 +44,8 @@ func NewRouter(srv usecase.Service) http.Handler {
 	a.HandleFunc("/ws/tenantUsers", wsEndpoint(messageChan))
 
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:*, http://2605:e000:1610:9591:8891:ce9e:9d2b:b035:*"},
+		// AllowedOrigins:   []string{"http://localhost:*, http://2605:e000:1610:9591:8891:ce9e:9d2b:b035:*"},
+		AllowedOrigins:   []string{"*"},
 		AllowCredentials: true,
 		ExposedHeaders:   []string{"Set-Cookie"},
 	})

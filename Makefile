@@ -1,5 +1,5 @@
 build:
-	go build -o cmd/main cmd/main.go
+	go build -o bin/cmd cmd/main.go
 
 all:
 	build

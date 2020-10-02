@@ -14,7 +14,7 @@ func NewServer(service usecase.Service) *http.Server {
 	handler := router.NewRouter(service)
 
 	s := &http.Server{
-		Addr:         ":80",
+		Addr:         ":8088",
 		Handler:      handler,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
