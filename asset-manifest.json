@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kangbojk/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css",
-    "main.js": "/kangbojk/go-react-fullstack/static/js/main.f1bdfff3.chunk.js",
-    "main.js.map": "/kangbojk/go-react-fullstack/static/js/main.f1bdfff3.chunk.js.map",
-    "runtime-main.js": "/kangbojk/go-react-fullstack/static/js/runtime-main.ed02586e.js",
-    "runtime-main.js.map": "/kangbojk/go-react-fullstack/static/js/runtime-main.ed02586e.js.map",
-    "static/js/2.eaf24c0a.chunk.js": "/kangbojk/go-react-fullstack/static/js/2.eaf24c0a.chunk.js",
-    "static/js/2.eaf24c0a.chunk.js.map": "/kangbojk/go-react-fullstack/static/js/2.eaf24c0a.chunk.js.map",
-    "index.html": "/kangbojk/go-react-fullstack/index.html",
-    "precache-manifest.9bfef3a4ae2d9dbe38ace31c49d06a56.js": "/kangbojk/go-react-fullstack/precache-manifest.9bfef3a4ae2d9dbe38ace31c49d06a56.js",
-    "service-worker.js": "/kangbojk/go-react-fullstack/service-worker.js",
-    "static/css/main.1c3b4d4b.chunk.css.map": "/kangbojk/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css.map",
-    "static/js/2.eaf24c0a.chunk.js.LICENSE.txt": "/kangbojk/go-react-fullstack/static/js/2.eaf24c0a.chunk.js.LICENSE.txt"
+    "main.css": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css",
+    "main.js": "/go-react-fullstack/static/js/main.f1bdfff3.chunk.js",
+    "main.js.map": "/go-react-fullstack/static/js/main.f1bdfff3.chunk.js.map",
+    "runtime-main.js": "/go-react-fullstack/static/js/runtime-main.72683766.js",
+    "runtime-main.js.map": "/go-react-fullstack/static/js/runtime-main.72683766.js.map",
+    "static/js/2.eaf24c0a.chunk.js": "/go-react-fullstack/static/js/2.eaf24c0a.chunk.js",
+    "static/js/2.eaf24c0a.chunk.js.map": "/go-react-fullstack/static/js/2.eaf24c0a.chunk.js.map",
+    "index.html": "/go-react-fullstack/index.html",
+    "precache-manifest.70e78e1c7d0df3c77a1074c53eddf769.js": "/go-react-fullstack/precache-manifest.70e78e1c7d0df3c77a1074c53eddf769.js",
+    "service-worker.js": "/go-react-fullstack/service-worker.js",
+    "static/css/main.1c3b4d4b.chunk.css.map": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css.map",
+    "static/js/2.eaf24c0a.chunk.js.LICENSE.txt": "/go-react-fullstack/static/js/2.eaf24c0a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed02586e.js",
+    "static/js/runtime-main.72683766.js",
     "static/js/2.eaf24c0a.chunk.js",
     "static/css/main.1c3b4d4b.chunk.css",
     "static/js/main.f1bdfff3.chunk.js"
