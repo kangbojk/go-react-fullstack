@@ -32,6 +32,7 @@ func isLogin(next http.Handler) http.Handler {
 func LoginWithEmail(srv usecase.Service) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
 
+		log.Println(r)
 		var input struct {
 			Email    string `json:"email"`
 			Password string `json:"password"`
