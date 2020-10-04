@@ -56,10 +56,12 @@ function App() {
       }
     }
 
+    fetchData()
     // show loading icon 
-    setTimeout(() => {
-      fetchData()
-    }, 500);
+    // setTimeout(() => {
+    //   fetchData()
+    // }, 100);
+
   }, [login]);
 
   if (loading === true) {
@@ -71,35 +73,41 @@ function App() {
       <Switch >
         <Route exact path="/" render={() => (
           login
-            ? <Redirect to="/dashboard" />
-            : <Redirect to="/login" />
+            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
+            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
         )} />
 
-        <Route exact path="/dashboard" render={() => (
+
+        <Route exact path={process.env.PUBLIC_URL + "/"} render={() => (
+          login
+            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
+            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
+        )} />
+
+        <Route path={process.env.PUBLIC_URL + "/dashboard"} render={() => (
           login
             ? <DashBoard onLogin={handleLogin} />
-            : <Redirect to="/login" />
+            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
         )} />
 
-        <Route exact path="/login" render={() => (
+        <Route path={process.env.PUBLIC_URL + "/login"} render={() => (
           login
-            ? <Redirect to="/dashboard" />
+            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
             : <LoginForm onLogin={handleLogin} />
         )} />
 
 
-        <Route exact path="/signup" render={() => (
+        <Route path={process.env.PUBLIC_URL + "/signup"} render={() => (
           login
-            ? <Redirect to="/dashboard" />
+            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
             : <SignUp onLogin={handleLogin} />
         )} />
 
-        <Route>
-          <Err404 />
-        </Route>
+        <Route component={Err404} />
+
       </Switch >
 
-    </Router>
+    </Router >
   );
 }
 
