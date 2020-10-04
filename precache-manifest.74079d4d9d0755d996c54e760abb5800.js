@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2de9193c269b0ebb4c1ca2cc121afbe9",
+    "revision": "2ea21d35a670c38a731db07d4c173319",
     "url": "/go-react-fullstack/index.html"
   },
   {
-    "revision": "b860d3ea47f55cbb4af9",
+    "revision": "94c1ef5a6cf8a2e6d581",
     "url": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css"
   },
   {
-    "revision": "08eaa667d12b9dfe1a7a",
-    "url": "/go-react-fullstack/static/js/2.da134e96.chunk.js"
+    "revision": "ef466905066932cc9b85",
+    "url": "/go-react-fullstack/static/js/2.dc235cb5.chunk.js"
   },
   {
     "revision": "e57a44933d753860e139eb21ebb99237",
-    "url": "/go-react-fullstack/static/js/2.da134e96.chunk.js.LICENSE.txt"
+    "url": "/go-react-fullstack/static/js/2.dc235cb5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b860d3ea47f55cbb4af9",
-    "url": "/go-react-fullstack/static/js/main.603e8cb6.chunk.js"
+    "revision": "94c1ef5a6cf8a2e6d581",
+    "url": "/go-react-fullstack/static/js/main.da348ae3.chunk.js"
   },
   {
     "revision": "e8b8e6bfb4a9622bcb4d",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/go-react-fullstack/precache-manifest.2d938cac4cfb12a22a64c7ae07d1e74b.js"
+  "/go-react-fullstack/precache-manifest.74079d4d9d0755d996c54e760abb5800.js"
 );
 
 self.addEventListener('message', (event) => {
