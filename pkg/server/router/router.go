@@ -15,7 +15,6 @@ var store = memstore.NewMemStore(
 	[]byte("enckey12341234567890123456789012"),
 )
 
-// TODO: return type *mux.Router
 func NewRouter(srv usecase.Service) http.Handler {
 
 	m := mux.NewRouter()
@@ -43,9 +42,14 @@ func NewRouter(srv usecase.Service) http.Handler {
 	a.HandleFunc("/api/logout", Logout(srv)).Methods("POST")
 	a.HandleFunc("/ws/tenantUsers", wsEndpoint(messageChan))
 
-	c := cors.New(cors.Options{
-		// AllowedOrigins:   []string{"http://localhost:*, http://2605:e000:1610:9591:8891:ce9e:9d2b:b035:*"},
-		AllowedOrigins:   []string{"*"},
+	// if(config.production)
+	// 	origins :=
+	// else
+	// 	origins := "*"
+
+	c := cors.New(cors.Options{		
+		AllowedOrigins:   []string{"http://localhost:*", "https://kangbojk.github.io:*"},
+		// AllowedOrigins:   []string{"*"},
 		AllowCredentials: true,
 		ExposedHeaders:   []string{"Set-Cookie"},
 	})
