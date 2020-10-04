@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d61c4ee17755c4217b0069b19c829d0b",
+    "revision": "2de9193c269b0ebb4c1ca2cc121afbe9",
     "url": "/go-react-fullstack/index.html"
   },
   {
-    "revision": "9fe405cc292bb10d5947",
+    "revision": "b860d3ea47f55cbb4af9",
     "url": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/go-react-fullstack/static/js/2.da134e96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9fe405cc292bb10d5947",
-    "url": "/go-react-fullstack/static/js/main.c6b5f25d.chunk.js"
+    "revision": "b860d3ea47f55cbb4af9",
+    "url": "/go-react-fullstack/static/js/main.603e8cb6.chunk.js"
   },
   {
     "revision": "e8b8e6bfb4a9622bcb4d",
