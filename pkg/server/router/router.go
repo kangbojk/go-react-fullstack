@@ -47,8 +47,9 @@ func NewRouter(srv usecase.Service) http.Handler {
 	// else
 	// 	origins := "*"
 
-	c := cors.New(cors.Options{		
-		AllowedOrigins:   []string{"http://localhost:*", "https://kangbojk.github.io:*"},
+	c := cors.New(cors.Options{
+		
+		AllowedOrigins:   []string{"http://localhost:*", "https://kangbojk.github.io"},
 		// AllowedOrigins:   []string{"*"},
 		AllowCredentials: true,
 		ExposedHeaders:   []string{"Set-Cookie"},
