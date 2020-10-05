@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/quasoft/memstore"
-
+	"github.com/gorilla/sessions"
 	"github.com/kangbojk/go-react-fullstack/pkg/usecase"
 )
 
@@ -15,8 +15,17 @@ var store = memstore.NewMemStore(
 	[]byte("enckey12341234567890123456789012"),
 )
 
-func NewRouter(srv usecase.Service) http.Handler {
+func store_init(){
+	store.Options = &sessions.Options{
+		Path:     "/",      // to match all requests
+		MaxAge:   3600 * 3, // 3 hour
+		Secure:   true,
+		SameSite: http.SameSiteNoneMode,
+	}
+}
 
+func NewRouter(srv usecase.Service) http.Handler {
+	store_init()
 	m := mux.NewRouter()
 
 	// messageChan used to pass tenant users
