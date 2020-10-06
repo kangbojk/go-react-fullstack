@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css",
-    "main.js": "/go-react-fullstack/static/js/main.c14a6661.chunk.js",
-    "main.js.map": "/go-react-fullstack/static/js/main.c14a6661.chunk.js.map",
+    "main.js": "/go-react-fullstack/static/js/main.78635ef2.chunk.js",
+    "main.js.map": "/go-react-fullstack/static/js/main.78635ef2.chunk.js.map",
     "runtime-main.js": "/go-react-fullstack/static/js/runtime-main.72683766.js",
     "runtime-main.js.map": "/go-react-fullstack/static/js/runtime-main.72683766.js.map",
     "static/js/2.c344f53d.chunk.js": "/go-react-fullstack/static/js/2.c344f53d.chunk.js",
     "static/js/2.c344f53d.chunk.js.map": "/go-react-fullstack/static/js/2.c344f53d.chunk.js.map",
     "index.html": "/go-react-fullstack/index.html",
-    "precache-manifest.228fba1204c851ed35da700109c5a12f.js": "/go-react-fullstack/precache-manifest.228fba1204c851ed35da700109c5a12f.js",
+    "precache-manifest.502590e4ec27128df8bce1e37f51af22.js": "/go-react-fullstack/precache-manifest.502590e4ec27128df8bce1e37f51af22.js",
     "service-worker.js": "/go-react-fullstack/service-worker.js",
     "static/css/main.1c3b4d4b.chunk.css.map": "/go-react-fullstack/static/css/main.1c3b4d4b.chunk.css.map",
     "static/js/2.c344f53d.chunk.js.LICENSE.txt": "/go-react-fullstack/static/js/2.c344f53d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.72683766.js",
     "static/js/2.c344f53d.chunk.js",
     "static/css/main.1c3b4d4b.chunk.css",
-    "static/js/main.c14a6661.chunk.js"
+    "static/js/main.78635ef2.chunk.js"
   ]
 }
