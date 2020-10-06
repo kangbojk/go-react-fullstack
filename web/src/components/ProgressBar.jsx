@@ -3,6 +3,7 @@ import React from 'react';
 import Cookies from 'js-cookie'
 
 import './ProgressBar.css'
+import config from "../config"
 
 export default class ProgressBar extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class ProgressBar extends React.Component {
     }
 
     fetchData = () => {
-        let apiUrl = process.env.REACT_APP_AUTH_PORT // read from config
+        let apiUrl = config.url.api_auth_url // read from config
         let userCookie = JSON.parse(Cookies.get('user'))
         let tenantID = userCookie['tenant_id']
 
@@ -39,7 +40,7 @@ export default class ProgressBar extends React.Component {
     }
 
     connect = () => {
-        var ws = new WebSocket("ws://localhost:8088/auth/ws/tenantUsers"); // read from config
+        var ws = new WebSocket(config.url.ws_url + "ws/tenantUsers"); // read from config
         let that = this; // cache the this
         var connectInterval;
 
@@ -110,7 +111,7 @@ export default class ProgressBar extends React.Component {
             return
         }
 
-        let apiUrl = process.env.REACT_APP_AUTH_PORT // read from config
+        let apiUrl = config.url.api_auth_url // read from config
         axios.post(apiUrl + 'tenants/plan').then(res => {
             this.setState({ capacity: res.data['capacity'], plan: 'Enterprise' })
             this.props.onMsg('success');
@@ -127,7 +128,7 @@ export default class ProgressBar extends React.Component {
     }
 
     addUser = () => {
-        let apiUrl = process.env.REACT_APP_AUTH_PORT // read from config
+        let apiUrl = config.url.api_auth_url // read from config
 
         let payload = {
             "users": parseInt(this.state.addition, 10),
