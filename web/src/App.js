@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -59,7 +59,7 @@ function App() {
     // show loading icon 
     setTimeout(() => {
       fetchData()
-    }, 500);
+    }, 200);
 
   }, [login]);
 
@@ -68,37 +68,29 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/">
       <Switch >
         <Route exact path="/" render={() => (
           login
-            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
-            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
+            ? <Redirect to={"/dashboard"} />
+            : <Redirect to={"/login"} />
         )} />
 
-
-        <Route exact path={process.env.PUBLIC_URL + "/"} render={() => (
-          login
-            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
-            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
-        )} />
-
-        <Route path={process.env.PUBLIC_URL + "/dashboard"} render={() => (
+        <Route path={"/dashboard"} render={() => (
           login
             ? <DashBoard onLogin={handleLogin} />
-            : <Redirect to={process.env.PUBLIC_URL + "/login"} />
+            : <Redirect to={"/login"} />
         )} />
 
-        <Route path={process.env.PUBLIC_URL + "/login"} render={() => (
+        <Route path={"/login"} render={() => (
           login
-            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
+            ? <Redirect to={"/dashboard"} />
             : <LoginForm onLogin={handleLogin} />
         )} />
 
-
-        <Route path={process.env.PUBLIC_URL + "/signup"} render={() => (
+        <Route path={"/signup"} render={() => (
           login
-            ? <Redirect to={process.env.PUBLIC_URL + "/dashboard"} />
+            ? <Redirect to={"/dashboard"} />
             : <SignUp onLogin={handleLogin} />
         )} />
 

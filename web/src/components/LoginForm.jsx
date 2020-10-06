@@ -68,7 +68,7 @@ export default class loginForm extends React.Component {
 
 
                 <div className="signup">
-                    <Link to={process.env.PUBLIC_URL + "/signup"}>Create an account</Link>
+                    <Link to={"/signup"}>Create an account</Link>
                 </div>
 
             </div>
