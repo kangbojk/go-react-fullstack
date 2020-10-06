@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import './LoginForm.css'
 
+import config from "../config"
+
+import { Link } from "react-router-dom";
 
 export default class loginForm extends React.Component {
     constructor(props) {
@@ -17,7 +20,7 @@ export default class loginForm extends React.Component {
         console.log(this.state.email, this.state.password);
         event.preventDefault();
 
-        let apiUrl = process.env.REACT_APP_PORT // read from config
+        let apiUrl = config.url.api_url // read from config
         console.log("server url: ", apiUrl)
         let payload = {
             "email": this.state.email,
@@ -65,7 +68,7 @@ export default class loginForm extends React.Component {
 
 
                 <div className="signup">
-                    <a href="/signup">Create an account</a>
+                    <Link to={"/signup"}>Create an account</Link>
                 </div>
 
             </div>

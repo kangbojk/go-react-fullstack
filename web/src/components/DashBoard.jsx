@@ -6,6 +6,7 @@ import NavBar from './NavBar'
 import ProgressBar from './ProgressBar'
 
 import { eraseCookie } from '../api/cookie'
+import config from "../config"
 
 export default class DashBoard extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ export default class DashBoard extends React.Component {
     }
 
     handleLogout = () => {
-        let apiUrl = process.env.REACT_APP_AUTH_PORT // read from config
+        let apiUrl = config.url.api_auth_url // read from config
 
         axios.post(apiUrl + 'logout').then(res => {
             this.props.onLogin(false)

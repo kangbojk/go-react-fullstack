@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -59,7 +59,8 @@ function App() {
     // show loading icon 
     setTimeout(() => {
       fetchData()
-    }, 500);
+    }, 200);
+
   }, [login]);
 
   if (loading === true) {
@@ -67,39 +68,37 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/">
       <Switch >
         <Route exact path="/" render={() => (
           login
-            ? <Redirect to="/dashboard" />
-            : <Redirect to="/login" />
+            ? <Redirect to={"/dashboard"} />
+            : <Redirect to={"/login"} />
         )} />
 
-        <Route exact path="/dashboard" render={() => (
+        <Route path={"/dashboard"} render={() => (
           login
             ? <DashBoard onLogin={handleLogin} />
-            : <Redirect to="/login" />
+            : <Redirect to={"/login"} />
         )} />
 
-        <Route exact path="/login" render={() => (
+        <Route path={"/login"} render={() => (
           login
-            ? <Redirect to="/dashboard" />
+            ? <Redirect to={"/dashboard"} />
             : <LoginForm onLogin={handleLogin} />
         )} />
 
-
-        <Route exact path="/signup" render={() => (
+        <Route path={"/signup"} render={() => (
           login
-            ? <Redirect to="/dashboard" />
+            ? <Redirect to={"/dashboard"} />
             : <SignUp onLogin={handleLogin} />
         )} />
 
-        <Route>
-          <Err404 />
-        </Route>
+        <Route component={Err404} />
+
       </Switch >
 
-    </Router>
+    </Router >
   );
 }
 

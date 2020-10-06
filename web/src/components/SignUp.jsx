@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './LoginForm.css'
 
+import config from "../config"
 
 export default class SignUp extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ export default class SignUp extends React.Component {
     handleSignUp = (event) => {
         event.preventDefault();
 
-        let apiUrl = process.env.REACT_APP_PORT // read from config        
+        let apiUrl = config.url.api_url // read from config        
         let payload = {
             "email": this.state.email,
             "password": this.state.password
