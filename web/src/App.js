@@ -56,11 +56,10 @@ function App() {
       }
     }
 
-    fetchData()
     // show loading icon 
-    // setTimeout(() => {
-    //   fetchData()
-    // }, 100);
+    setTimeout(() => {
+      fetchData()
+    }, 500);
 
   }, [login]);
 

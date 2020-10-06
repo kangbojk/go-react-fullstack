@@ -4,6 +4,8 @@ import './LoginForm.css'
 
 import config from "../config"
 
+import { Link } from "react-router-dom";
+
 export default class loginForm extends React.Component {
     constructor(props) {
         super(props);
@@ -66,7 +68,7 @@ export default class loginForm extends React.Component {
 
 
                 <div className="signup">
-                    <a href={process.env.PUBLIC_URL + "/signup"}>Create an account</a>
+                    <Link to={process.env.PUBLIC_URL + "/signup"}>Create an account</Link>
                 </div>
 
             </div>
