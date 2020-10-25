@@ -56,7 +56,7 @@ Please visit https://kangbojk.github.io/go-react-fullstack/ for demo.
 ```
 
 ### Design principle
-The design of this application follow clean/hexagonal architecture.
+The design of this application follows clean/hexagonal architecture.
 
 (To learn more about this pattern, please refer to [Building an enterprise service in Go](https://youtu.be/twcDf_Y2gXY) and [How Do You Structure Your Go Apps](https://youtu.be/oL6JBUk6tj0).)
 
@@ -70,11 +70,11 @@ Clean/hexagonal architecture let you separate application in layers
 
 
 #### WebSocket
-This application use [gorilla/websocket](https://github.com/gorilla/websocket) to update progress bar. 
+[gorilla/websocket](https://github.com/gorilla/websocket) is used to update progress bar. 
 
 ![](asset/go-react-ws.gif)
 
-One can use AJAX to update the progress bar with polling, but here WebSocket is used as demonstration to substitute polling.
+One can uses AJAX to update the progress bar with polling, but here WebSocket is used as demonstration to substitute polling.
 (Note that this application was originally served as a dashboard, it received command from other endpoint. If a notify mechanism is not implemented, we have to choose polling.)
 
 #### Auth
@@ -104,4 +104,4 @@ type Account struct {
 Frontend is developed with React (both hook & class), source in [web/](web/) folder.
 
 #### Deployment
-Currently the frontend is deployed to Github page and backend server is deployed to Heroku (Free tier so it takes 2-3 seconds for wake up). No DB support yet(in memory storage for the time being), might switch to MongoDB Altas.
+Currently the frontend is deployed to Github page and backend server is deployed to Heroku (Free tier so it takes 2-3 seconds for wake up). No DB support yet (in memory storage for the time being), might switch to MongoDB Altas.
