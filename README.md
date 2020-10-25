@@ -74,7 +74,7 @@ Clean/hexagonal architecture let you separate application in layers
 
 ![](asset/go-react-ws.gif)
 
-One can uses AJAX to update the progress bar with polling, but here WebSocket is used as demonstration to substitute polling.
+One can use AJAX to update the progress bar with polling, but here WebSocket is used as demonstration to substitute polling.
 (Note that this application was originally served as a dashboard, it received command from other endpoint. If a notify mechanism is not implemented, we have to choose polling.)
 
 #### Auth
